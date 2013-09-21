@@ -506,3 +506,21 @@ font-size: 18px;
 	float:left;
 	}
 
+@media screen and (min-width: 700px) and (max-width: 960px){
+	.content-fourths .fourth {
+	width: 46%;
+	padding-left:2%;
+	padding-right:2%;
+	display: inline-block;
+	float:left;
+	}
+}
+@media screen and (max-width: 699px){
+	.content-fourths .fourth {
+	width: 96%;
+	padding-left:2%;
+	padding-right:2%;
+	display: inline-block;
+	float:left;
+	}
+}
