@@ -425,3 +425,32 @@ Small Device Styles
   }
 
 }
+
+
+ nav .menu-item {
+display: inline-block;
+float: left;
+position: relative;
+width: 100px;
+text-align: center;
+margin-left: 10px;
+margin-right: 10px;
+}
+ nav .menu-item a {
+text-decoration: none;
+color: #18A4ED;
+padding-left: 6px;
+padding-right: 6px;
+}
+.sub-menu {
+display: none;
+}
+.menu-item:hover .sub-menu {
+display: block;
+position: absolute;
+background-color: #434343;
+}
+.sub-menu a {
+display: block;
+width: 100px;
+}
