@@ -56,7 +56,7 @@ body {
   color:#373737;
   background: #212121;
   font-size: 16px;
-  font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
+  font-family: 'Raleway', 'Roboto', 'Open Sans', sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -65,7 +65,6 @@ h1, h2, h3, h4, h5, h6 {
   margin: 10px 0;
   font-weight: 700;
   color:#222222;
-  font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
   letter-spacing: -1px;
 }
 
@@ -171,7 +170,7 @@ pre, code {
 }
 
 pre {
-  width: 100%;
+  width: 90%;
   padding: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,.1);
   overflow: auto;
@@ -268,7 +267,7 @@ Full-Width Styles
 
 .inner {
   position: relative;
-  max-width: 640px;
+  /* max-width: 640px; */
   padding: 20px 10px;
   margin: 0 auto;
 }
@@ -305,16 +304,13 @@ Full-Width Styles
   margin: 0;
   color: #fff;
   font-size: 42px;
-  font-weight: 700;
   text-shadow: #111 0px 0px 10px;
 }
-
-#project_tagline {
-  color: #fff;
-  font-size: 24px;
-  font-weight: 300;
-  background: none;
-  text-shadow: #111 0px 0px 10px;
+#project_title .bold {
+  font-weight: 700;
+}
+#project_title .thin {
+  font-weight: 200;
 }
 
 #downloads {
@@ -425,7 +421,16 @@ Small Device Styles
   }
 
 }
-
+nav#main-menu {
+height: 44px;
+line-height: 44px;
+background: #434343;
+}
+.menu-items-container {
+margin-left: auto;
+margin-right: auto;
+width: 480px;
+}
 
  nav .menu-item {
 display: inline-block;
@@ -436,11 +441,14 @@ text-align: center;
 margin-left: 10px;
 margin-right: 10px;
 }
- nav .menu-item a {
+nav .menu-item a {
 text-decoration: none;
 color: #18A4ED;
 padding-left: 6px;
 padding-right: 6px;
+}
+nav .menu-item:hover {
+
 }
 .sub-menu {
 display: none;
@@ -448,9 +456,53 @@ display: none;
 .menu-item:hover .sub-menu {
 display: block;
 position: absolute;
+z-index: 100;
 background-color: #434343;
+}
+.sub-menu a:hover {
+background-color: #0090FF;
+color: white;
 }
 .sub-menu a {
 display: block;
 width: 100px;
 }
+.content-fifths img, .content-fourths img, .content-thirds img {
+max-width: 100%;
+height: auto;
+border: 6px solid #f9f9f9;
+}
+.content-fifths, .content-fourths , .content-thirds {
+clear: both;
+float: none;
+}
+.content-fifths img:hover, .content-fourths img:hover, .content-thirds img:hover {
+border: 6px solid #0090FF;
+}
+.content-fifths h2, .content-fourths h2, .content-thirds h2 {
+font-weight:  200;
+font-size: 18px;
+}
+	.content-thirds .third {
+	width: 29%;
+	padding-left:2%;
+	padding-right:2%;
+	display: inline-block;
+	float: left;
+	}
+	.content-fifths .fifth {
+	width: 16%;
+	padding-left:2%;
+	padding-right:2%;
+	clear: none;
+	float: left;
+	display: inline-block;
+	}
+	.content-fourths .fourth {
+	width: 21%;
+	padding-left:2%;
+	padding-right:2%;
+	display: inline-block;
+	float:left;
+	}
+
