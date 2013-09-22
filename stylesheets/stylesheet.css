@@ -516,6 +516,9 @@ font-size: 18px;
 	}
 }
 @media screen and (max-width: 699px){
+.menu-item {
+Max-width:80px;
+}
 	.content-fourths .fourth {
 	width: 96%;
 	padding-left:2%;
